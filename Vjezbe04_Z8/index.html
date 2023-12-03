@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+   
+   var arr = ["Ovo", "je", "My", "prvi", "komad", "OF", "JAVASCRIPT", "koda", "Koji", "je", "proradio"]
+   var newArr = new Array();
+
+   function obrada (array){
+
+      for(i = 0; i < arr.length; i++){
+         if(arr[i].match("\S{5,}|[A-Z]{1,}")){
+               newArr.push(arr[i])
+         }
+      }
+   }
+
+   obrada(arr);
+   console.log(newArr);
+
+ </script>
+</body>
+</html>

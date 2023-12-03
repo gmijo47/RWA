@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+   
+   function isPerfect(br){
+
+      sdj = 0;
+      console.log("Unos je " + br)
+      for(i = 1; i < br; i++){
+         if(br % i == 0){
+            sdj+=i;
+         }
+      }
+      if(sdj != br){
+         console.warn("Broj nije perfect")
+      }else {
+         console.log("Broj je prefect")
+      }
+
+   }
+
+   isPerfect(6)
+   isPerfect(496)
+   isPerfect(22)
+
+ </script>
+</body>
+</html>

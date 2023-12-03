@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+   
+   s1 = {
+      firstName: "Marko",
+      lastName: "Maric",
+      age: 40,
+      eyeColor: "black"
+
+   }
+   s2 = {
+      firstName: "Pero",
+      lastName: "Peric",
+      age: 10,
+      eyeColor: "green"
+
+   }
+   for(i = 0 ; i < 3; i++){
+      console.log(Object.entries(s1).at(i))
+      console.log(Object.entries(s2).at(i))
+   }
+
+ </script>
+</body>
+</html>
