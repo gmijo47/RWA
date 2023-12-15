@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Vjezbe</title>
+    </head>
+    <body>
+        <form onsubmit="fx()">
+            <input id="ocjena" type="number" max="5" min="1" width="20px">
+            <br>
+            <input type="submit" width="20px">
+
+        </form>
+    <script>
+       function fx(){
+        switch(document.getElementById("ocjena").value){
+            case "1":
+                alert("Nedovoljan");
+                break;
+            case "2": 
+            alert("Dovoljan");
+                break;
+            case "3": 
+            alert("Dobar");
+                break;
+            case "4": 
+            alert("Vrlodobar");
+                break;
+            case "5": 
+            alert("Odličan");
+                break;
+            default:
+                alert("Ništa")
+        }
+       }
+    </script>
+    </body>
+</html>

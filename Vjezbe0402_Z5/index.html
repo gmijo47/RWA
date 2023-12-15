@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Vjezbe</title>
+    </head>
+    <body>
+        <form onsubmit="fx(document.getElementById('reg').value)">
+            <input id="reg" type="text" width="20px">
+            <br>
+            <input type="submit" width="20px">
+
+        </form>
+    <script>
+     function fx(val){
+        event.preventDefault();
+
+        const reg = /^[AEJKMOT]{1}[0-9]{2}-[AEJKMOT]{1}-[0-9]{3}|^TA-[0-9]{6}/
+
+        valid = reg.test(val);
+
+        alert(valid ? "Ispravan" : "Neisprava" )
+
+     }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Vjezbe</title>
+</head>
+<body>
+<p><a href="#" id="boom">Kliknite ovdje da dodate novi paragraf tekst</a></p>
+<p id="thisLocation">Novi paragrafi teksta će se pojaviti ispod</p>
+<p>Ovo je defaultn-ni prvi paragraf teksta</p>
+</body>
+<script language="javascript" type="text/javascript">
+    document.getElementById("boom").addEventListener("click", function (){
+        p =document.createElement('p');
+        p.textContent ="Novi paragraf";
+            document.body.appendChild(p)
+    })
+    </script>
+</html>

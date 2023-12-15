@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Vjezbe</title>
+    </head>
+    <body>
+        <form onsubmit="fx()">
+            <input id="op1" type="number" width="20px">
+            <input id="op2" type="number" width="20px">
+            <input id="res" type="number" width="20px">
+            <br>
+            <input type="submit" width="20px">
+        </form>
+        
+    <script>
+     function fx(val){
+        event.preventDefault();
+        document.getElementById("res").value = (Number(document.getElementById("op1").value) + Number(document.getElementById("op2").value))
+     }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Vjezbe</title>
+    </head>
+    <body>
+        <img id="s" src="zarulja_on_2.png"></img>
+        <img id="p" src="on-removebg-preview.png"></img>
+        
+    </body>
+
+    <script>
+        on = true;
+       document.getElementById("p").addEventListener("click", function (){
+        if(on){
+            document.getElementById("p").src = "off-removebg-preview.png"
+            document.getElementById("s").src = "zarulja_off_2.png"
+            on = false
+        }else {
+            document.getElementById("p").src = "on-removebg-preview.png"
+            document.getElementById("s").src = "zarulja_on_2.png"
+            on = true;
+        }
+       })
+      
+    </script>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Vjezbe</title>
+    </head>
+    <body>
+        <form onsubmit="fx()">
+            <input id="op1" type="date" width="20px">
+            <br>
+            <input type="submit" width="20px">
+        </form>
+        
+    <script>
+     function fx(val){
+        event.preventDefault();
+        dt = new Date(document.getElementById("op1").value);
+        god = new Date().getFullYear() - dt.getFullYear();
+        var m = new Date().getMonth() - dt.getMonth();
+        if (m < 0 || (m === 0 && new Date().getDate() < dt.getDate())) {
+            god--;
+        }
+        alert("imate " + god + " god");
+        
+     }
+    </script>
+    </body>
+</html>

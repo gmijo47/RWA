@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Vjezbe</title>
+    </head>
+    <body>
+        <p id="ar">Artimeticka sredian je </p>
+        <p id="gsr">Geometriska sredian je </p>
+    <script>
+       var br = prompt("Unesite brojeve za nesto");
+
+       arr = br.split(",").map(Number);
+       sum = arr.reduce(function(a, b){
+        return a+b;
+       })
+       gsum = arr.reduce(function(a,b){
+        return a*b;
+       })
+
+       document.getElementById("ar").innerHTML +=  (sum/arr.length)
+       document.getElementById("gsr").innerHTML +=  (Math.pow(gsum, 1/arr.length))
+    </script>
+    </body>
+</html>

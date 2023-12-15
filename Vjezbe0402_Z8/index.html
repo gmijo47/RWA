@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Vjezbe</title>
+    </head>
+    <body>
+        <form onsubmit="">
+            <input id="op1" type="number" width="20px">
+            <input id="op2" type="number" width="20px">
+        </form>
+        <button onclick="f('+')" id="p">+</button>
+        <button onclick="f('-')" id="m">-</button>
+        <button onclick="f('*')" id="mn">*</button>
+        <button onclick="f('/')" id="dj">/</button>
+        <br>
+        <button onclick="f('sin')" id="sin">sin</button>
+        <button onclick="f('cos')" id="cos">cos</button>
+        <button onclick="f('tan')" id="tan">tan</button>
+        <br>
+        <button onclick="f('ln')" id="ln">ln</button>
+        <button onclick="f('log')" id="log">log</button>
+        <br>
+        <button onclick="f('2')" id="2">^2</button>
+        <button onclick="f('3')" id="3">^3</button>
+        <button onclick="f('n')" id="n">^n op2</button>
+
+        
+    <script>
+        function f(z){
+
+        op1 = Number(document.getElementById("op1").value);
+        op2 = Number(document.getElementById("op2").value);
+            switch(z){
+                case "+":
+                    alert(op1+op2)
+                    break;
+                case "+":
+                    alert(op1+op2)
+                    break;
+                case "-":
+                    alert(op1-op2)
+                    break;
+                case "*":
+                    alert(op1*op2)
+                    break;
+                case "/":
+                    alert(op1/op2)
+                    break;
+                case "sin":
+                    alert(Math.sin(op1))
+                    break;
+                case "cos":
+                    alert(Math.cos(op1))
+                    break;
+                case "tan":
+                    alert(Math.tan(op1))
+                    break;
+                case "log":
+                    alert(Math.log10(op1))
+                    break;
+                case "ln":
+                    alert(Math.log(op1))
+                    break;
+                case "2":
+                    alert(Math.pow(op1, 2))
+                    break;
+                case "3":
+                    alert(Math.pow(op1, 3))
+                    break;
+                case "n":
+                alert(Math.pow(op1, op2))
+                    break;
+            }
+
+        }
+       
+      
+    </script>
+    </body>
+</html>
